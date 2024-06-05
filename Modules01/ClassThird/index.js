@@ -1,17 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+// Thought experiment: use .append() instead of ReactDOM.render()?
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+/**
+Challenge: fix our code!
+
+Don't forget, you're not using CDNs anymore, so there's no
+global "ReactDOM" variable to use anymore.
+ */
 
 const page = (
-    <div className="border m-2 p-6 rounded shadow hover:bg-black">
-        <h1 className="text-3xl font-bold text-zinx-500 hover:text-white" >History of Civilization</h1>
-        <p className="text-lg mt-2 hover:text-white">
-            Mesopotamia (c. 3500–500 BCE): Often called the cradle of civilization,
-            it was home to the Sumerians, Akkadians, Babylonians, and Assyrians.
-            They developed writing (cuneiform), the wheel, and early forms of
-            government and law.
-        </p>
+    <div>
+        <h1>My awesome website in React</h1>
+        <h3>Reasons I love React</h3>
+        <ol>
+            <li>It's composable</li>
+            <li>It's declarative</li>
+            <li>It's a hireable skill</li>
+            <li>It's actively maintained by skilled people</li>
+        </ol>
     </div>
 )
-// ReactDOM.render(page, document.getElementById("root"))
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(page)
+
+ReactDOM.render(page, document.getElementById("root"))
+// document.getElementById("root").append(JSON.stringify(page))
