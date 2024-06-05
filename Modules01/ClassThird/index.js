@@ -1,7 +1,7 @@
 // Thought experiment: use .append() instead of ReactDOM.render()?
 
-import React from "react"
-import ReactDOM from "react-dom"
+// import React from "react"
+// import ReactDOM from "react-dom"
 
 /**
 Challenge: fix our code!
