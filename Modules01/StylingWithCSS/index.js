@@ -1,9 +1,9 @@
 
-/**
-Challenge: 
 
-- Add an `ul` inside the Header's `nav` and create
-  the following `li`s: "Pricing", "About", & "Contact"
+/**
+Mini Challenge:
+Move the `header` element from Page into 
+its own component called "Header"
 */
 
 function Header() {
