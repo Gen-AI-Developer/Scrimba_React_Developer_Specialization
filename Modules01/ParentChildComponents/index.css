@@ -3,3 +3,8 @@ body {
     margin: 10;
     padding: 10;
 }
+
+.nav-list-item {
+    list-style: none;
+
+}

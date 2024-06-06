@@ -11,6 +11,11 @@ function Header() {
         <header>
             <nav className=" border rounded p-4 flex">
                 <span><img className="animate-spin" src="./react-logo.png" width="40px" /> RT-Dev</span>
+                <ol className="nav-list-item">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ol>
             </nav>
         </header>
     )
