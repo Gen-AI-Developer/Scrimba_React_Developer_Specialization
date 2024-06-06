@@ -4,13 +4,18 @@ Challenge:
 
 - Add an `ul` inside the Header's `nav` and create
   the following `li`s: "Pricing", "About", & "Contact"
+- Using flexbox, line up the nav items horizontally, and
+  put them inline with the React logo.
+- Change the image styling to happen in CSS instead of in-line
+  For practice, add a new class to the image in order to style it
 */
 
 function Header() {
     return (
-        <header>
-            <nav className=" border rounded p-4 flex">
-                <span><img className="animate-spin" src="./react-logo.png" width="40px" /> RT-Dev</span>
+        <header className="header">
+            <nav className="nav border rounded p-4 flex">
+                <span><img className="nav-logo" src="./react-logo.png" /></span>
+                <h1>RT-Dev</h1>
                 <ol className="nav-list-item">
                     <li>Pricing</li>
                     <li>About</li>
@@ -22,7 +27,7 @@ function Header() {
 }
 function MainContent() {
     return (
-        <div className=" flex flex-col flex-row mt-10 mb-10">
+        <div className="mt-10 mb-10">
             <h1 className="text-lg font-bold">Reasons I'm excited to learn React</h1>
             <ol>
                 <li>It's a popular library, so I'll be
