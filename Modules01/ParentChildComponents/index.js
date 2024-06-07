@@ -12,7 +12,7 @@ Challenge:
 
 function Header() {
     return (
-        <header className="header">
+        <header className="header raleway">
             <nav className="nav border rounded p-4 flex">
                 <span><img className="nav-logo" src="./react-logo.png" /></span>
                 <h1>RT-Dev</h1>
@@ -27,9 +27,9 @@ function Header() {
 }
 function MainContent() {
     return (
-        <div className="mt-10 mb-10">
-            <h1 className="text-lg font-bold">Reasons I'm excited to learn React</h1>
-            <ol>
+        <div className="main-content">
+            <h1 className="raleway">Reasons I'm excited to learn React</h1>
+            <ol className="raleway-p o-list">
                 <li>It's a popular library, so I'll be
                     able to fit in with the cool kids!</li>
                 <li>I'm more likely to get a job as a developer
@@ -40,9 +40,11 @@ function MainContent() {
 }
 function Footer() {
     return (
-        <footer className="text-sm p-4 border rounded">
-            <small>© 2024 RT-Dev development. All rights reserved.</small>
-        </footer>
+        <div>
+            <footer className="footer">
+                <small className="raleway">© 2024 RT-Dev development. All rights reserved.</small>
+            </footer>
+        </div>
     )
 }
 function Page() {
