@@ -1,0 +1,111 @@
+html,
+body {
+
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+
+.raleway-p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-list-item {
+    list-style: none;
+    display: flex;
+}
+
+nav>h3,
+nav>h4 {
+    margin: 0;
+}
+
+nav>h3 {
+    margin-right: auto;
+    color: #61DAFB;
+}
+
+nav>img {
+    height: 30px;
+    margin-right: 7px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #21222A;
+    padding: 30px, 25px;
+    height: 90px;
+}
+
+.nav-list-item>li {
+    padding: 10px;
+
+}
+
+.nav-logo {
+    width: 60px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    box-shadow: 0 10px black inset, 0 -10px red inset, -10px 0 blue inset, 10px 0 green inset;
+
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: darkslategray;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.main-content {
+    text-align: start;
+    padding: 20px;
+
+
+
+}
+
+.o-list>li {
+    padding: 5px;
+    margin-top: 5px;
+}
