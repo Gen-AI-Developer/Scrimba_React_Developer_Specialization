@@ -10,6 +10,21 @@ Challenge:
   For practice, add a new class to the image in order to style it
 */
 
+/* 
+Challenge: Place the gray react logo in the background
+
+Don't use an `img` element, but rather set it as the
+`background-image` of the `main` element.
+
+Hint: you'll need to use the following properties:
+- background-image
+- background-repeat
+- background-position
+
+(Or the shorthand `background` property with values for all
+those other properties)
+*/
+
 function Header() {
     return (
         <header className="header raleway">
@@ -24,8 +39,8 @@ function Header() {
 function MainContent() {
     return (
         <main>
-            <h1>Fun Facts about React.</h1>
-            <ul>
+            <h1 className="main--title">Fun Facts about React.</h1>
+            <ul className="main--facts">
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
                 <li>Has well over 100K stars on GitHub</li>

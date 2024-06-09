@@ -1,13 +1,52 @@
 html,
 body {
 
-    background-color: rgb(255, 255, 255);
+    background-color: #282D35;
     margin: 0;
     font-family: "Raleway", sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+main {
+    padding: 57px 27px;
+    color: white;
+    background-image: url("./react-gray-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: center;
+
+}
+
+/* main>background-image {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+} */
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--facts>li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--facts>li::marker {
+    font-size: 1.5rem;
+    color: #61DAFB;
 }
 
 /* // <uniquifier>: Use a unique and descriptive class name
@@ -93,9 +132,9 @@ nav>img {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: darkslategray;
+    background-color: #61DAFB;
     width: 100%;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px;
 
