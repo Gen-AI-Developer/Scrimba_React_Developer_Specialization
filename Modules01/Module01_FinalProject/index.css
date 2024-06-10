@@ -13,7 +13,7 @@ body {
 .main--container {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
@@ -32,6 +32,7 @@ body {
 } */
 
 .main--content {
+    border-radius: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 80px;
@@ -121,4 +122,20 @@ body {
     border-radius: 6px;
     background-color: #297fe5;
     border: none;
+}
+
+.img-com-prop {
+    width: 24.95px;
+    height: 25px;
+
+}
+
+.footer {
+    background-color: #151618;
+    height: 64px;
+    width: 317px;
+    border-radius: 0px 0px 10px 10px;
+    top: 760px;
+    left: 116px;
+    position: absolute;
 }
