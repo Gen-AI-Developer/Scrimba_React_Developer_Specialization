@@ -17,13 +17,17 @@ function App() {
         <div className="main--container">
             <div className="first-div">
                 <div className="main--content">
-                    <img className="img" src="./profile-img.jpg" />
-                    <div>Safdar Ali Shah</div>
-                    <div>Full Stack Developer</div>
-                    <div>programmersafdar@live.com</div>
-                    <div>
-                        <button>Email</button>
-                        <button>LinkedIn</button>
+                    <div className="img-div">
+                        <img className="img" src="./profile-img.jpg" />
+                    </div>
+                    <div className="detial-content">
+                        <div className="text-name">Safdar Ali Shah</div>
+                        <div className="text-job">Full Stack Developer</div>
+                        <div className="text-email">programmersafdar@live.com</div>
+                        <div className="buttons">
+                            <button className="email-button">Email</button>
+                            <button className="linkedin-button">LinkedIn</button>
+                        </div>
                     </div>
                 </div>
 
