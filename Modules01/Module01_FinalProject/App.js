@@ -44,6 +44,7 @@ function Footer() {
             <div className="twitter-logo"></div>
             <div className="insta-logo"></div>
             <div className="linkin-logo"></div>
+            {/* <div className="v0_2000">Module 01/04 Final Project Scrimba</div> */}
         </footer>
 
     )
@@ -53,7 +54,7 @@ function Main() {
     return (
         <main>
             <div className="v0_196">
-                <span className="v0_197">I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</span>
+                <span className="v0_197">I am a full stack developer with a particular interest in making things simple and automated with Next.js and React for frontend, MangoDB at back, Prisma for Modeling, Vercel for deploying, figma for design. I try to keep up with security and best practices, and am always looking for new things to learn.</span>
                 <span className="v0_198">Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</span>
                 <span className="v0_199">About</span>
                 <span className="v0_200">Interests</span>
@@ -65,11 +66,13 @@ function Main() {
 
 function App() {
     return (
-        <div className="container">
-            <Card />
-            <Header />
-            <Main />
-            <Footer />
+        <div className="parentdiv">
+            <div className="container">
+                <Card />
+                <Header />
+                <Main />
+                <Footer />
+            </div>
         </div>
     )
 }

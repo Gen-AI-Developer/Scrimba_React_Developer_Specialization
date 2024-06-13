@@ -7,6 +7,10 @@ body {
 
 }
 
+.parentdiv {
+    
+}
+
 * {
     box-sizing: border-box;
 }
@@ -124,10 +128,7 @@ body {
     text-align: left;
 }
 
-.container {
-    justify-content: center;
-    align-items: center;
-}
+.container {}
 
 .v0_233 {
     width: 115px;
@@ -189,7 +190,7 @@ body {
     font-weight: Regular;
     font-size: 10px;
     opacity: 1;
-    text-align: left;
+    text-align: justify;
 }
 
 .v0_198 {
@@ -202,7 +203,7 @@ body {
     font-weight: Regular;
     font-size: 10px;
     opacity: 1;
-    text-align: left;
+    text-align: justify;
 }
 
 .v0_199 {
@@ -231,6 +232,18 @@ body {
     text-align: left;
 }
 
+.v0_2000 {
+    width: 242px;
+    color: rgba(245, 245, 245, 1);
+    position: absolute;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+    justify-content: center;
+}
+
 /* Footer Background Styles */
 .footer-bg {
     width: 317px;
@@ -243,6 +256,7 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
+
 }
 
 /* Footer Social Icons */
