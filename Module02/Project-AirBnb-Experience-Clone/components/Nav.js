@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Nav() {
+export default function Nav() {
     return (
         <header>
             <nav className='nav'>

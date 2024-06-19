@@ -10,6 +10,7 @@ export default function App() {
     return (
         <div>
             <Nav />
+            <h1>Components</h1>
         </div>
     )
 }
