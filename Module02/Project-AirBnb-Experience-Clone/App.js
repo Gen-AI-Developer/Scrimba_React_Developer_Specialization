@@ -1,5 +1,6 @@
 import React from "react"
 import Nav from "./components/Nav"
+import Hero from "./components/Hero"
 
 /*
 Challenge: Build the Navbar component.
@@ -10,7 +11,7 @@ export default function App() {
     return (
         <div>
             <Nav />
-            <h1>Components</h1>
+            <Hero/>
         </div>
     )
 }

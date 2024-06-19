@@ -403,6 +403,10 @@ var _Nav = __webpack_require__(16);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _Hero = __webpack_require__(17);
+
+var _Hero2 = _interopRequireDefault(_Hero);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -415,11 +419,7 @@ function App() {
         "div",
         null,
         _react2.default.createElement(_Nav2.default, null),
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Components"
-        )
+        _react2.default.createElement(_Hero2.default, null)
     );
 }
 
@@ -30523,6 +30523,36 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Nav() {
+    return _react2.default.createElement(
+        'header',
+        null,
+        _react2.default.createElement(
+            'nav',
+            { className: 'nav' },
+            _react2.default.createElement('img', { className: 'nav-logo', src: './images/airbnb-logo.png' })
+        )
+    );
+}
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Hero;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Hero() {
     return _react2.default.createElement(
         'header',
         null,
