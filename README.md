@@ -1,6 +1,8 @@
-# Scrimba React Developer Specialization: Module One
+# Scrimba React Developer Specialization
 
-## Overview
+
+
+## Module One Overview
 
 Welcome to the Scrimba React Developer Specialization! This README provides an overview of Module One, where we focused on building static websites using React 17 and 18. This module is designed to equip you with the foundational skills required to create static websites with the latest versions of React.
 
