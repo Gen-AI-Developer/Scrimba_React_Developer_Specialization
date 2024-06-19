@@ -399,6 +399,10 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Nav = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/Nav\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -408,9 +412,9 @@ Check the Figma file for the design specifics.
 
 function App() {
     return _react2.default.createElement(
-        "h1",
+        "div",
         null,
-        "App component"
+        _react2.default.createElement(_Nav2.default, null)
     );
 }
 

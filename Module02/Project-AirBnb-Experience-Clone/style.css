@@ -5,3 +5,14 @@
 body {
     margin: 0;
 }
+
+.nav {
+    display: flex;
+    padding: auto;
+
+}
+
+.nav-logo {
+    width: 20px;
+    height: 20px;
+}

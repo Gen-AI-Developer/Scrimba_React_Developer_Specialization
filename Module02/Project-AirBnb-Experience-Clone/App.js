@@ -1,4 +1,5 @@
 import React from "react"
+import Nav from "./components/Nav"
 
 /*
 Challenge: Build the Navbar component.
@@ -7,6 +8,8 @@ Check the Figma file for the design specifics.
 
 export default function App() {
     return (
-        <h1>App component</h1>
+        <div>
+            <Nav />
+        </div>
     )
 }
