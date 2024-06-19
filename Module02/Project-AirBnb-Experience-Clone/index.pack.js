@@ -30556,7 +30556,12 @@ function Hero() {
     return _react2.default.createElement(
         'div',
         { className: 'main' },
-        _react2.default.createElement('img', { className: 'mainImage', src: './images/photo-grid.png' })
+        _react2.default.createElement('img', { className: 'mainImage', src: './images/photo-grid.png' }),
+        _react2.default.createElement(
+            'h1',
+            null,
+            'Online Experiences'
+        )
     );
 }
 
