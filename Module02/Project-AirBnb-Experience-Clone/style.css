@@ -17,3 +17,11 @@ body {
 .nav-logo {
     max-width: 100px;
 }
+
+.main {}
+
+.mainImage {
+    padding: 100px;
+    width: auto;
+    height: max-content;
+}

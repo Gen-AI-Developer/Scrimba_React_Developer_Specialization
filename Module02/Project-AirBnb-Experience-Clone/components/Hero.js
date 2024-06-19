@@ -2,11 +2,9 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <header>
-            <nav className='nav'>
-                <img className='nav-logo' src="./images/airbnb-logo.png" />
-            </nav>
-        </header>
+        <div className='main'>
+            <img className='mainImage' src='./images/photo-grid.png' />
+        </div>
     )
 }
 

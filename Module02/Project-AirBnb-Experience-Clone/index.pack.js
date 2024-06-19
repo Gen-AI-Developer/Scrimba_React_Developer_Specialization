@@ -30554,13 +30554,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Hero() {
     return _react2.default.createElement(
-        'header',
-        null,
-        _react2.default.createElement(
-            'nav',
-            { className: 'nav' },
-            _react2.default.createElement('img', { className: 'nav-logo', src: './images/airbnb-logo.png' })
-        )
+        'div',
+        { className: 'main' },
+        _react2.default.createElement('img', { className: 'mainImage', src: './images/photo-grid.png' })
     );
 }
 
