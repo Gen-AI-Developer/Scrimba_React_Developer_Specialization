@@ -493,14 +493,18 @@ function Hero() {
         { className: 'hero' },
         _react2.default.createElement('img', { className: 'hero--photo', src: './images/photo-grid.png' }),
         _react2.default.createElement(
-            'h1',
-            { className: 'hero--herder' },
-            'Online Experiences'
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'hero--text' },
-            'Join unique interactive activities led by one-of-a-kind hosts\u2014all without leaving home.'
+            'div',
+            null,
+            _react2.default.createElement(
+                'h1',
+                { className: 'hero--herder' },
+                'Online Experiences'
+            ),
+            _react2.default.createElement(
+                'p',
+                { className: 'hero--text' },
+                'Join unique interactive activities led by one-of-a-kind hosts\u2014all without leaving home.'
+            )
         )
     );
 }
