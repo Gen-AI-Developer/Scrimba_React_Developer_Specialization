@@ -2,12 +2,14 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div className='main'>
-            <img className='mainImage' src='./images/photo-grid.png' />
-            <h1>
+        <section className='hero'>
+            <img className='hero--photo' src='./images/photo-grid.png' />
+            <h1 className='hero--herder'>
                 Online Experiences
             </h1>
-        </div>
+            <p className='hero--text'>Join unique interactive activities led by
+                one-of-a-kind hosts—all without leaving home.</p>
+        </section>
     )
 }
 

@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav {
@@ -18,10 +19,21 @@ body {
     max-width: 100px;
 }
 
-.main {}
+.hero--photo {
+    max-width: 800px;
+    align-self: center;
 
-.mainImage {
-    padding: 100px;
-    width: auto;
-    height: max-content;
+}
+
+.hero--header {}
+
+.hero--text {}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
 }
