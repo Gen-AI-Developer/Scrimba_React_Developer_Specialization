@@ -24,10 +24,18 @@ export default function Card() {
         <div className="Card--div" >
             <div className="Card--img-div">
                 <img className="Card--img" src="./images/katie-zaferes.png" />
-                <span className="Card--img-text">Sold</span>
+                <span>5.0</span>
+                <span>5.0</span>
+                <span>5.0</span>
+
             </div>
+            <p></p>
+
+            <p>
+                <span>5.0</span>
+            </p>
             <div>
-                
+
             </div>
         </div>
     )
