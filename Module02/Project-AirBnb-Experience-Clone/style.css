@@ -56,3 +56,36 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+.Card--div {
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.Card--img {
+    width: 176px;
+    height: 235px;
+    top: 521px;
+    left: 37px;
+    border-radius: 9px;
+}
+
+.Card--img-div {
+    /* position: absolute; */
+}
+
+.Card--img-text {
+    width: 61px;
+    height: 20px;
+    top: 80px;
+    left: 13px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    align-items: center;
+
+}

@@ -21,6 +21,14 @@ Notes:
 
 export default function Card() {
     return (
-        <h1>Replace this</h1>
+        <div className="Card--div" >
+            <div className="Card--img-div">
+                <img className="Card--img" src="./images/katie-zaferes.png" />
+                <span className="Card--img-text">Sold</span>
+            </div>
+            <div>
+                
+            </div>
+        </div>
     )
 }

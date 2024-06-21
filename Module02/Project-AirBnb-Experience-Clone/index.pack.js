@@ -30617,9 +30617,19 @@ Notes:
 
 function Card() {
     return _react2.default.createElement(
-        "h1",
-        null,
-        "Replace this"
+        "div",
+        { className: "Card--div" },
+        _react2.default.createElement(
+            "div",
+            { className: "Card--img-div" },
+            _react2.default.createElement("img", { className: "Card--img", src: "./images/katie-zaferes.png" }),
+            _react2.default.createElement(
+                "span",
+                { className: "Card--img-text" },
+                "Sold"
+            )
+        ),
+        _react2.default.createElement("div", null)
     );
 }
 
