@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <section className='hero'>
             <img className='hero--photo' src='./images/photo-grid.png' />
-            <div>
+            <div className='main--div' >
                 <h1 className='hero--herder'>
                     Online Experiences
                 </h1>

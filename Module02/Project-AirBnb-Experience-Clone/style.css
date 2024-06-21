@@ -19,6 +19,13 @@ body {
     max-width: 100px;
 }
 
+.main--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero--photo {
     max-width: 800px;
     align-self: center;

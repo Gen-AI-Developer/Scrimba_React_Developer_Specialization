@@ -494,7 +494,7 @@ function Hero() {
         _react2.default.createElement('img', { className: 'hero--photo', src: './images/photo-grid.png' }),
         _react2.default.createElement(
             'div',
-            null,
+            { className: 'main--div' },
             _react2.default.createElement(
                 'h1',
                 { className: 'hero--herder' },
