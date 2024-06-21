@@ -407,6 +407,10 @@ var _Hero = __webpack_require__(6);
 
 var _Hero2 = _interopRequireDefault(_Hero);
 
+var _Card = __webpack_require__(18);
+
+var _Card2 = _interopRequireDefault(_Card);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -419,7 +423,7 @@ function App() {
         "div",
         null,
         _react2.default.createElement(_Nav2.default, null),
-        _react2.default.createElement(_Hero2.default, null)
+        _react2.default.createElement(_Card2.default, null)
     );
 }
 
@@ -30573,6 +30577,51 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Card;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*
+Challenge: Build the Card component
+For now, hard-code in the data (like 
+the rating, title, price, etc.)
+
+Notes:
+- Only render 1 instance (I already did this for you)
+- The star icon and photo (katie-zaferes.png) are in the images 
+  folder for your use
+- Make sure to include:
+    - image
+    - star icon (star.png), rating, and review count
+    - title
+    - cost/person
+- The main purpose of this challenge is to show you where our limitations
+  currently are, so don't worry about the fact that you're hard-coding all
+  this data into the component.
+*/
+
+function Card() {
+    return _react2.default.createElement(
+        "h1",
+        null,
+        "Replace this"
+    );
+}
 
 /***/ })
 /******/ ]);
