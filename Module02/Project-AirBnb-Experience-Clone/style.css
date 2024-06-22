@@ -57,35 +57,31 @@ section {
     flex-direction: column;
 }
 
-.Card--div {
-    background-color: teal;
-    display: flex;
-    flex-direction: column;
+.card {
+    width: 175px;
+    font-size: 12px;
 
 
 }
 
-.Card--img {
-    width: 176px;
-    height: 235px;
-    top: 521px;
-    left: 37px;
+.card--img {
+    width: 100%;
     border-radius: 9px;
 }
 
-.Card--img-div {
-    /* position: absolute; */
+.card--status {
+    display: flex;
+    align-items: center;
 }
 
-.Card--img-text {
-    width: 61px;
-    height: 20px;
-    top: 80px;
-    left: 13px;
-    border-radius: 2px;
-    position: absolute;
-    background-color: white;
-    padding: 8px;
-    align-items: center;
+.card--star {
+    height: 14px;
+}
 
+.gray {
+    color: #918E9B;
+}
+
+.bold {
+    font-weight: bold;
 }

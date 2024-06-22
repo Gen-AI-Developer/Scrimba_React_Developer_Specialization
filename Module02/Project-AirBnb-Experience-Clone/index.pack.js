@@ -423,7 +423,7 @@ function App() {
         "div",
         null,
         _react2.default.createElement(_Nav2.default, null),
-        _react2.default.createElement(_Hero2.default, null)
+        _react2.default.createElement(_Card2.default, null)
     );
 }
 
@@ -513,18 +513,43 @@ Notes:
 function Card() {
     return _react2.default.createElement(
         "div",
-        { className: "Card--div" },
+        { className: "card" },
+        _react2.default.createElement("img", { src: "./images/katie-zaferes.png", className: "card--img" }),
         _react2.default.createElement(
             "div",
-            { className: "Card--img-div" },
-            _react2.default.createElement("img", { className: "Card--img", src: "./images/katie-zaferes.png" }),
+            { className: "card--status" },
+            _react2.default.createElement("img", { className: "card--star", src: "./images/star.png" }),
             _react2.default.createElement(
                 "span",
-                { className: "Card--img-text" },
-                "Sold"
+                null,
+                "5.0"
+            ),
+            _react2.default.createElement(
+                "span",
+                { className: "gray" },
+                "(6) \u2022 "
+            ),
+            _react2.default.createElement(
+                "span",
+                { className: "gray" },
+                "USA"
             )
         ),
-        _react2.default.createElement("div", null)
+        _react2.default.createElement(
+            "p",
+            null,
+            "Life Lesson with Katie Zaferes"
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            _react2.default.createElement(
+                "span",
+                { className: "bold" },
+                "From $136"
+            ),
+            " / person"
+        )
     );
 }
 

@@ -21,22 +21,17 @@ Notes:
 
 export default function Card() {
     return (
-        <div className="Card--div" >
-            <div className="Card--img-div">
-                <img className="Card--img" src="./images/katie-zaferes.png" />
+        <div className="card">
+            <img src="./images/katie-zaferes.png" className="card--img" />
+            <div className="card--status" >
+                <img className="card--star" src="./images/star.png" />
                 <span>5.0</span>
-                <span>5.0</span>
-                <span>5.0</span>
-
+                <span className="gray">(6) • </span>
+                <span className="gray">USA</span>
             </div>
-            <p></p>
+            <p>Life Lesson with Katie Zaferes</p>
+            <p><span className="bold">From $136</span> / person</p>
 
-            <p>
-                <span>5.0</span>
-            </p>
-            <div>
-
-            </div>
         </div>
     )
 }

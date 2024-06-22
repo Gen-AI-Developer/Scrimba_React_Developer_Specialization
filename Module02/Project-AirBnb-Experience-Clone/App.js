@@ -12,8 +12,8 @@ export default function App() {
     return (
         <div>
             <Nav />
-            <Hero />
-            {/* <Card /> */}
+            {/* <Hero /> */}
+            <Card />
         </div>
     )
 }
