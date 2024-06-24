@@ -1,20 +1,20 @@
 import React from "react";
-function Contact({ img, name, contact, mail }) {
+function Contact(props) {
 
-    // console.log(props)
+    console.log(props)
 
     return (
         <div className="">
             <div className="contact-card">
-                <img src={img} />
-                <h3>{name}</h3>
+                <img src={props.img} />
+                <h3>{props.name}</h3>
                 <div className="info-group">
                     <img src="./images/phone-icon.png" />
-                    <p>{contact}</p>
+                    <p>{props.contact}</p>
                 </div>
                 <div className="info-group">
                     <img src="./images/mail-icon.png" />
-                    <p>{mail}</p>
+                    <p>{props.mail}</p>
                 </div>
             </div>
         </div>
