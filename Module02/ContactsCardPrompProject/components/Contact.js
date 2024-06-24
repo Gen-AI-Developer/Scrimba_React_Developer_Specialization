@@ -1,17 +1,20 @@
 import React from "react";
-function Contact() {
+function Contact({ img, name, contact, mail }) {
+
+    // console.log(props)
+
     return (
         <div className="">
             <div className="contact-card">
-                <img src="./images/mr-whiskerson.png" />
-                <h3>Mr. Whiskerson</h3>
+                <img src={img} />
+                <h3>{name}</h3>
                 <div className="info-group">
                     <img src="./images/phone-icon.png" />
-                    <p>(212) 555-1234</p>
+                    <p>{contact}</p>
                 </div>
                 <div className="info-group">
                     <img src="./images/mail-icon.png" />
-                    <p>mr.whiskaz@catnap.meow</p>
+                    <p>{mail}</p>
                 </div>
             </div>
         </div>

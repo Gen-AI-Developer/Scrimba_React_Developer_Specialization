@@ -20317,18 +20317,26 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Contact() {
+function Contact(_ref) {
+    var img = _ref.img,
+        name = _ref.name,
+        contact = _ref.contact,
+        mail = _ref.mail;
+
+
+    // console.log(props)
+
     return _react2.default.createElement(
         "div",
         { className: "" },
         _react2.default.createElement(
             "div",
             { className: "contact-card" },
-            _react2.default.createElement("img", { src: "./images/mr-whiskerson.png" }),
+            _react2.default.createElement("img", { src: img }),
             _react2.default.createElement(
                 "h3",
                 null,
-                "Mr. Whiskerson"
+                name
             ),
             _react2.default.createElement(
                 "div",
@@ -20337,7 +20345,7 @@ function Contact() {
                 _react2.default.createElement(
                     "p",
                     null,
-                    "(212) 555-1234"
+                    contact
                 )
             ),
             _react2.default.createElement(
@@ -20347,7 +20355,7 @@ function Contact() {
                 _react2.default.createElement(
                     "p",
                     null,
-                    "mr.whiskaz@catnap.meow"
+                    mail
                 )
             )
         )
