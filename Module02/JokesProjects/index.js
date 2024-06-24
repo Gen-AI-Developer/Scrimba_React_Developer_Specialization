@@ -20,3 +20,12 @@ they always take things literally."
 If you don't pass in a "question" prop, how might you make it only 
 show the punchline?
 */
+import React from "react";
+import ReactDOM from "react-dom"
+
+export default function App() {
+  return <div>
+    
+  </div>
+}
+ReactDOM.render(<App />, document.getElementById('root'))
