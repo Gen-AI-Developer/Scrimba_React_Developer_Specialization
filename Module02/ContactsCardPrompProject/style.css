@@ -16,6 +16,9 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .contact-card {
@@ -25,11 +28,12 @@ body {
     display: flex;
     flex-direction: column;
     padding: 13px;
+    padding-left: 13px;
     padding-bottom: 20px;
     background-color: white;
 }
 
-.contact-card > img {
+.contact-card>img {
     width: 100%;
     height: auto;
     align-self: center;
@@ -37,7 +41,7 @@ body {
     object-fit: cover;
 }
 
-.contact-card > h3 {
+.contact-card>h3 {
     font-weight: 700;
     font-size: 18px;
 }
@@ -47,12 +51,12 @@ body {
     align-items: center;
 }
 
-.info-group > img {
+.info-group>img {
     height: 11px;
     margin-right: 8px;
 }
 
-.info-group > p {
+.info-group>p {
     margin-block: 3px;
     font-size: 12px;
     color: #2B283A;

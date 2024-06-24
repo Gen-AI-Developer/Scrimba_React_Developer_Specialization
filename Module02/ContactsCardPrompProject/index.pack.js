@@ -884,140 +884,40 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Contact = __webpack_require__(27);
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/* Challenge:
-
-- Create a Contact.js component in another file
-- Move one of the contact card divs below into that file
-- import and render 4 instances of that contact card
-    - Think ahead: what's the problem with doing it this way?
-*/
 
 function App() {
     return _react2.default.createElement(
         "div",
         { className: "contacts" },
-        _react2.default.createElement(
-            "div",
-            { className: "contact-card" },
-            _react2.default.createElement("img", { src: "./images/mr-whiskerson.png" }),
-            _react2.default.createElement(
-                "h3",
-                null,
-                "Mr. Whiskerson"
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/phone-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "(212) 555-1234"
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/mail-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "mr.whiskaz@catnap.meow"
-                )
-            )
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "contact-card" },
-            _react2.default.createElement("img", { src: "./images/fluffykins.png" }),
-            _react2.default.createElement(
-                "h3",
-                null,
-                "Fluffykins"
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/phone-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "(212) 555-2345"
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/mail-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "fluff@me.com"
-                )
-            )
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "contact-card" },
-            _react2.default.createElement("img", { src: "./images/felix.png" }),
-            _react2.default.createElement(
-                "h3",
-                null,
-                "Felix"
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/phone-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "(212) 555-4567"
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/mail-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "thecat@hotmail.com"
-                )
-            )
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "contact-card" },
-            _react2.default.createElement("img", { src: "./images/pumpkin.png" }),
-            _react2.default.createElement(
-                "h3",
-                null,
-                "Pumpkin"
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/phone-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "(0800) CAT KING"
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info-group" },
-                _react2.default.createElement("img", { src: "./images/mail-icon.png" }),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "pumpkin@scrimba.com"
-                )
-            )
-        )
+        _react2.default.createElement(_Contact2.default, {
+            img: "./images/mr-whiskerson.png",
+            name: "Mr. Whiskerson",
+            contact: "(212) 555-1234",
+            mail: "mr.whiskaz@catnap.meow"
+        }),
+        _react2.default.createElement(_Contact2.default, {
+            img: "./images/fluffykins.png",
+            name: "Fluffykins",
+            contact: "(212) 555-2345",
+            mail: "fluff@me.com"
+        }),
+        _react2.default.createElement(_Contact2.default, {
+            img: "./images/felix.png",
+            name: "Felix",
+            contact: "(212) 555-4567",
+            mail: "thecat@hotmail.com"
+        }),
+        _react2.default.createElement(_Contact2.default, {
+            img: "./images/pumpkin.png",
+            name: "Pumpkin King",
+            contact: "(0316) 091 KING",
+            mail: "pumpkin@scrimba.com"
+        })
     );
 }
 
@@ -20399,6 +20299,61 @@ _calculateChangedBits:b,_defaultValue:a,_currentValue:a,_currentValue2:a,_change
 b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)K.call(b,c)&&!L.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];d.children=l}return{$$typeof:t,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=M.bind(null,a);b.type=a;return b},isValidElement:N,version:"16.4.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:J,
 assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default?Z.default:Z;
 
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Contact() {
+    return _react2.default.createElement(
+        "div",
+        { className: "" },
+        _react2.default.createElement(
+            "div",
+            { className: "contact-card" },
+            _react2.default.createElement("img", { src: "./images/mr-whiskerson.png" }),
+            _react2.default.createElement(
+                "h3",
+                null,
+                "Mr. Whiskerson"
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info-group" },
+                _react2.default.createElement("img", { src: "./images/phone-icon.png" }),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "(212) 555-1234"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info-group" },
+                _react2.default.createElement("img", { src: "./images/mail-icon.png" }),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "mr.whiskaz@catnap.meow"
+                )
+            )
+        )
+    );
+}
+exports.default = Contact;
 
 /***/ })
 /******/ ]);
