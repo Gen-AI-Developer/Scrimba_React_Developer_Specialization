@@ -19,18 +19,18 @@ Notes:
   this data into the component.
 */
 
-export default function Card() {
+export default function Card(promps) {
     return (
         <div className="card">
-            <img src="./images/katie-zaferes.png" className="card--img" />
+            <img src={promps.img} className="card--img" />
             <div className="card--status" >
                 <img className="card--star" src="./images/star.png" />
-                <span>5.0</span>
-                <span className="gray">(6) • </span>
-                <span className="gray">USA</span>
+                <span>{promps.rating}</span>
+                <span className="gray">{promps.reviewCount} • </span>
+                <span className="gray">{promps.country}</span>
             </div>
-            <p>Life Lesson with Katie Zaferes</p>
-            <p><span className="bold">From $136</span> / person</p>
+            <p>{promps.title}</p>
+            <p><span className="bold">From ${promps.price}</span> / person</p>
 
         </div>
     )
