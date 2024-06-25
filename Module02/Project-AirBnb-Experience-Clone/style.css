@@ -11,11 +11,18 @@ body {
     height: 70px;
     display: flex;
     padding: 20px 36px;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
+    box-shadow: 0px 4.98256px 8.4564px rgba(255, 118, 118, 0.548);
+    position: fixed;
+    width: 90%;
+    top: 10px;
+    left: 5%;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-color: #FF5A5F;
+    border-radius: 10px;
 
 }
 
@@ -55,15 +62,30 @@ section {
 .hero {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
 }
 
+/* .view--cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    /* width: 50%; */
+/* background-color: aliceblue; */
+/* justify-content: space-between; */
+/* margin-left: 100px; */
+/* margin-right: 100px; }*/
+
 .card {
-    width: 200px;
+    width: 300px;
     font-size: 12px;
     margin-right: 10px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     border-radius: 10px;
     padding-bottom: 5px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card--img {
@@ -105,9 +127,8 @@ section {
     background-color: #FF5A5F;
     color: white;
 }
-.card--btn:hover{
-    
-}
+
+.card--btn:hover {}
 
 .card-btn-div {
     padding: 10px;
@@ -130,4 +151,7 @@ section {
     align-self: center;
     justify-content: center;
     margin-bottom: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }

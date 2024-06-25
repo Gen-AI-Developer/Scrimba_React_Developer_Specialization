@@ -566,53 +566,57 @@ Notes:
 function Card(promps) {
     return _react2.default.createElement(
         "div",
-        { className: "card" },
-        _react2.default.createElement("img", { src: promps.img, className: "card--img" }),
-        _react2.default.createElement(
-            "p",
-            { className: "card--title" },
-            promps.title
-        ),
-        _react2.default.createElement(
-            "p",
-            { className: "card--para" },
-            _react2.default.createElement(
-                "span",
-                { className: "bold" },
-                "From $",
-                promps.price
-            ),
-            " / person"
-        ),
+        { className: "" },
         _react2.default.createElement(
             "div",
-            { className: "card--status" },
-            _react2.default.createElement("img", { className: "card--star", src: "./images/star.png" }),
+            { className: "card" },
+            _react2.default.createElement("img", { src: promps.img, className: "card--img" }),
             _react2.default.createElement(
-                "span",
-                null,
-                promps.rating
+                "p",
+                { className: "card--title" },
+                promps.title
             ),
             _react2.default.createElement(
-                "span",
-                { className: "gray" },
-                "-(",
-                promps.reviewCount,
-                ") \u2022 "
+                "p",
+                { className: "card--para" },
+                _react2.default.createElement(
+                    "span",
+                    { className: "bold" },
+                    "From $",
+                    promps.price
+                ),
+                " / person"
             ),
             _react2.default.createElement(
-                "span",
-                { className: "gray" },
-                promps.country
-            )
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "card-btn-div" },
+                "div",
+                { className: "card--status" },
+                _react2.default.createElement("img", { className: "card--star", src: "./images/star.png" }),
+                _react2.default.createElement(
+                    "span",
+                    null,
+                    promps.rating
+                ),
+                _react2.default.createElement(
+                    "span",
+                    { className: "gray" },
+                    "-(",
+                    promps.reviewCount,
+                    ") \u2022 "
+                ),
+                _react2.default.createElement(
+                    "span",
+                    { className: "gray" },
+                    promps.country
+                )
+            ),
             _react2.default.createElement(
-                "button",
-                { className: "card--btn" },
-                "View More!"
+                "div",
+                { className: "card-btn-div" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "card--btn" },
+                    "View More!"
+                )
             )
         )
     );

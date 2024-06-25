@@ -21,20 +21,22 @@ Notes:
 
 export default function Card(promps) {
     return (
-        <div className="card">
-            <img src={promps.img} className="card--img" />
-            <p className="card--title">{promps.title}</p>
-            <p className="card--para"><span className="bold">From ${promps.price}</span> / person</p>
-            <div className="card--status" >
-                <img className="card--star" src="./images/star.png" />
-                <span>{promps.rating}</span>
-                <span className="gray">-({promps.reviewCount}) • </span>
-                <span className="gray">{promps.country}</span>
-            </div>
-            <div className="card-btn-div">
-                <button className="card--btn">View More!</button>
-            </div>
+        <div className="">
+            <div className="card">
+                <img src={promps.img} className="card--img" />
+                <p className="card--title">{promps.title}</p>
+                <p className="card--para"><span className="bold">From ${promps.price}</span> / person</p>
+                <div className="card--status" >
+                    <img className="card--star" src="./images/star.png" />
+                    <span>{promps.rating}</span>
+                    <span className="gray">-({promps.reviewCount}) • </span>
+                    <span className="gray">{promps.country}</span>
+                </div>
+                <div className="card-btn-div">
+                    <button className="card--btn">View More!</button>
+                </div>
 
+            </div>
         </div>
     )
 }
