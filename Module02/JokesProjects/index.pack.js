@@ -502,29 +502,39 @@ var _jokes2 = _interopRequireDefault(_jokes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
+  var colors = [_react2.default.createElement(
+    "h2",
+    null,
+    "Red"
+  ), _react2.default.createElement(
+    "h2",
+    null,
+    "Orange"
+  ), _react2.default.createElement(
+    "h2",
+    null,
+    "Yellow"
+  ), _react2.default.createElement(
+    "h2",
+    null,
+    "Green"
+  ), _react2.default.createElement(
+    "h2",
+    null,
+    "Blue"
+  ), _react2.default.createElement(
+    "h2",
+    null,
+    "Indigo"
+  ), _react2.default.createElement(
+    "h2",
+    null,
+    "Violet"
+  )];
   return _react2.default.createElement(
     "div",
     null,
-    _react2.default.createElement(_jokes2.default, {
-      setup: "I got my daughter a fridge for her birthday.",
-      punchline: "I can't wait to see her face light up when she opens it."
-    }),
-    _react2.default.createElement(_jokes2.default, {
-      setup: "How did the hacker escape the police?",
-      punchline: "He just ransomware!"
-    }),
-    _react2.default.createElement(_jokes2.default, {
-      setup: "Why don't pirates travel on mountain roads?",
-      punchline: "Scurvy."
-    }),
-    _react2.default.createElement(_jokes2.default, {
-      setup: "Why do bees stay in the hive in the winter?",
-      punchline: "Swarm."
-    }),
-    _react2.default.createElement(_jokes2.default, {
-      setup: "What's the best thing about Switzerland?",
-      punchline: "I don't know, but the flag is a big plus!"
-    })
+    colors
   );
 } /* Challenge:
   One LAST time in this course, set up a React app from scratch
