@@ -1,11 +1,11 @@
 import React from 'react'
 
-const jokes = {
-    
-
-}
-export default function jokes() {
+export default function Jokes(props) {
     return (
-        <div>jokes</div>
+        <div>
+            {props.setup && <div><h1>Setup: {props.setup}</h1></div>}
+            <div><h4>Punchline: {props.punchline}</h4></div>
+            <hr />
+        </div>
     )
 }
