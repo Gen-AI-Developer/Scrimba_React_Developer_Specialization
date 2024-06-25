@@ -31,6 +31,9 @@ export default function Card(promps) {
                 <span className="gray">-({promps.reviewCount}) • </span>
                 <span className="gray">{promps.country}</span>
             </div>
+            <div className="card-btn-div">
+                <button className="card--btn">View More!</button>
+            </div>
 
         </div>
     )

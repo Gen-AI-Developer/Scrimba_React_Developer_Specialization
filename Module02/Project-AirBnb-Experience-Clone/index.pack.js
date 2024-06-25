@@ -605,6 +605,15 @@ function Card(promps) {
                 { className: "gray" },
                 promps.country
             )
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "card-btn-div" },
+            _react2.default.createElement(
+                "button",
+                { className: "card--btn" },
+                "View More!"
+            )
         )
     );
 }
