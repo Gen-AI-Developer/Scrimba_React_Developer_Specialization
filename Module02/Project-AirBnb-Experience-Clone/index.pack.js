@@ -445,15 +445,38 @@ function App() {
         "div",
         null,
         _react2.default.createElement(_Nav2.default, null),
-        _react2.default.createElement(_Card2.default, {
-            img: "./images/katie-zaferes.png",
-            rating: "5.0",
-            reviewCount: "6",
-            country: "Pakistan",
-            title: "Life Lessons with Katie Zaferes",
-            price: "136"
+        _react2.default.createElement(_Hero2.default, null),
+        _react2.default.createElement(
+            "div",
+            { className: "divdiv" },
+            _react2.default.createElement(_Card2.default, {
+                img: "./images/katie-zaferes.png",
+                rating: "5.0",
+                reviewCount: "6",
+                country: "Pakistan",
+                title: "Life Lessons with Katie Zaferes",
+                price: "136"
 
-        })
+            }),
+            _react2.default.createElement(_Card2.default, {
+                img: "./images/katie-zaferes.png",
+                rating: "5.0",
+                reviewCount: "6",
+                country: "Pakistan",
+                title: "Life Lessons with Katie Zaferes",
+                price: "136"
+
+            }),
+            _react2.default.createElement(_Card2.default, {
+                img: "./images/katie-zaferes.png",
+                rating: "5.0",
+                reviewCount: "6",
+                country: "Pakistan",
+                title: "Life Lessons with Katie Zaferes",
+                price: "136"
+
+            })
+        )
     );
 }
 
@@ -546,6 +569,22 @@ function Card(promps) {
         { className: "card" },
         _react2.default.createElement("img", { src: promps.img, className: "card--img" }),
         _react2.default.createElement(
+            "p",
+            { className: "card--title" },
+            promps.title
+        ),
+        _react2.default.createElement(
+            "p",
+            { className: "card--para" },
+            _react2.default.createElement(
+                "span",
+                { className: "bold" },
+                "From $",
+                promps.price
+            ),
+            " / person"
+        ),
+        _react2.default.createElement(
             "div",
             { className: "card--status" },
             _react2.default.createElement("img", { className: "card--star", src: "./images/star.png" }),
@@ -557,30 +596,15 @@ function Card(promps) {
             _react2.default.createElement(
                 "span",
                 { className: "gray" },
+                "-(",
                 promps.reviewCount,
-                " \u2022 "
+                ") \u2022 "
             ),
             _react2.default.createElement(
                 "span",
                 { className: "gray" },
                 promps.country
             )
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            promps.title
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            _react2.default.createElement(
-                "span",
-                { className: "bold" },
-                "From $",
-                promps.price
-            ),
-            " / person"
         )
     );
 }

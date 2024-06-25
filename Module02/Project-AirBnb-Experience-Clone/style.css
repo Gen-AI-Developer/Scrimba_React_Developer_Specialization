@@ -60,22 +60,39 @@ section {
 .card {
     width: 175px;
     font-size: 12px;
-
-
+    margin-right: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding-bottom: 5px;
 }
 
 .card--img {
     width: 100%;
     border-radius: 9px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
 }
 
 .card--status {
     display: flex;
     align-items: center;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .card--star {
     height: 14px;
+    padding-left: 5px;
+}
+
+.card--title {
+    padding-left: 5px;
+}
+
+.card--para {
+    padding-left: 5px;
 }
 
 .gray {
@@ -84,4 +101,13 @@ section {
 
 .bold {
     font-weight: bold;
+
+}
+
+.divdiv {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }

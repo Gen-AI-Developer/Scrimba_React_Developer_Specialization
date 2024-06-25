@@ -35,16 +35,36 @@ export default function App() {
     return (
         <div>
             <Nav />
-            {/* <Hero /> */}
-            <Card
-                img="./images/katie-zaferes.png"
-                rating="5.0"
-                reviewCount="6"
-                country="Pakistan"
-                title="Life Lessons with Katie Zaferes"
-                price="136"
+            <Hero />
+            <div className="divdiv">
+                <Card
+                    img="./images/katie-zaferes.png"
+                    rating="5.0"
+                    reviewCount="6"
+                    country="Pakistan"
+                    title="Life Lessons with Katie Zaferes"
+                    price="136"
 
-            />
+                />
+                <Card
+                    img="./images/katie-zaferes.png"
+                    rating="5.0"
+                    reviewCount="6"
+                    country="Pakistan"
+                    title="Life Lessons with Katie Zaferes"
+                    price="136"
+
+                />
+                <Card
+                    img="./images/katie-zaferes.png"
+                    rating="5.0"
+                    reviewCount="6"
+                    country="Pakistan"
+                    title="Life Lessons with Katie Zaferes"
+                    price="136"
+
+                />
+            </div>
         </div>
     )
 }
