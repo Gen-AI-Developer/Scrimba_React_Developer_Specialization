@@ -411,6 +411,10 @@ var _Card = __webpack_require__(6);
 
 var _Card2 = _interopRequireDefault(_Card);
 
+var _data = __webpack_require__(19);
+
+var _data2 = _interopRequireDefault(_data);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -441,6 +445,18 @@ Challenge: Pass props to the Card component and display that data
     <p><span className="bold">From $136</span> / person</p> */}
 
 function App() {
+    var cardElement = _data2.default.map(function (data_object) {
+        return _react2.default.createElement(_Card2.default, {
+            key: data_object.id,
+            img: data_object.coverImg,
+            rating: data_object.stats.rating,
+            reviewCount: data_object.stats.reviewCount,
+            location: data_object.location,
+            title: data_object.title,
+            price: data_object.price,
+            openspot: data_object.openSpots
+        });
+    });
     return _react2.default.createElement(
         "div",
         null,
@@ -449,33 +465,7 @@ function App() {
         _react2.default.createElement(
             "div",
             { className: "divdiv" },
-            _react2.default.createElement(_Card2.default, {
-                img: "./images/katie-zaferes.png",
-                rating: "5.0",
-                reviewCount: "6",
-                country: "Pakistan",
-                title: "Life Lessons with Katie Zaferes",
-                price: "136"
-
-            }),
-            _react2.default.createElement(_Card2.default, {
-                img: "./images/katie-zaferes.png",
-                rating: "5.0",
-                reviewCount: "6",
-                country: "Pakistan",
-                title: "Life Lessons with Katie Zaferes",
-                price: "136"
-
-            }),
-            _react2.default.createElement(_Card2.default, {
-                img: "./images/katie-zaferes.png",
-                rating: "5.0",
-                reviewCount: "6",
-                country: "Pakistan",
-                title: "Life Lessons with Katie Zaferes",
-                price: "136"
-
-            })
+            cardElement
         )
     );
 }
@@ -564,12 +554,21 @@ Notes:
 */
 
 function Card(promps) {
+    var badgetext = promps.openspots;
+    if (promps.openspots === 0) {
+        badgetext = "SOLD OUT";
+    } else if (promps.location === "Online") badgetext = "ON LINE";
     return _react2.default.createElement(
         "div",
         { className: "" },
         _react2.default.createElement(
             "div",
             { className: "card" },
+            badgetext && _react2.default.createElement(
+                "div",
+                { className: "card--bagde" },
+                badgetext
+            ),
             _react2.default.createElement("img", { src: promps.img, className: "card--img" }),
             _react2.default.createElement(
                 "p",
@@ -606,7 +605,7 @@ function Card(promps) {
                 _react2.default.createElement(
                     "span",
                     { className: "gray" },
-                    promps.country
+                    promps.location
                 )
             ),
             _react2.default.createElement(
@@ -30726,6 +30725,54 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = [{
+    id: 1,
+    title: "Life Lessons with Katie Zaferes",
+    description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+    price: 136,
+    coverImg: "./images/katie-zaferes.png",
+    stats: {
+        rating: 5.0,
+        reviewCount: 6
+    },
+    location: "Online",
+    openSpots: 0
+}, {
+    id: 2,
+    title: "Learn Wedding Photography",
+    description: "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
+    price: 125,
+    coverImg: "./images/wedding-photography.png",
+    stats: {
+        rating: 5.0,
+        reviewCount: 30
+    },
+    location: "Online",
+    openSpots: 27
+}, {
+    id: 3,
+    title: "Group Mountain Biking",
+    description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
+    price: 50,
+    coverImg: "./images/mountain-bike.png",
+    stats: {
+        rating: 4.8,
+        reviewCount: 2
+    },
+    location: "Norway",
+    openSpots: 3
+}];
 
 /***/ })
 /******/ ]);

@@ -2,6 +2,7 @@ import React from "react"
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import data from "./data"
 
 /*
 Challenge: Build the Navbar component.
@@ -32,38 +33,24 @@ Challenge: Pass props to the Card component and display that data
 <p><span className="bold">From $136</span> / person</p> */}
 
 export default function App() {
+    const cardElement = data.map((data_object) => {
+        return <Card
+            key={data_object.id}
+            img={data_object.coverImg}
+            rating={data_object.stats.rating}
+            reviewCount={data_object.stats.reviewCount}
+            location={data_object.location}
+            title={data_object.title}
+            price={data_object.price}
+            openspot={data_object.openSpots}
+        />
+    })
     return (
         <div>
             <Nav />
             <Hero />
             <div className="divdiv">
-                <Card
-                    img="./images/katie-zaferes.png"
-                    rating="5.0"
-                    reviewCount="6"
-                    country="Pakistan"
-                    title="Life Lessons with Katie Zaferes"
-                    price="136"
-
-                />
-                <Card
-                    img="./images/katie-zaferes.png"
-                    rating="5.0"
-                    reviewCount="6"
-                    country="Pakistan"
-                    title="Life Lessons with Katie Zaferes"
-                    price="136"
-
-                />
-                <Card
-                    img="./images/katie-zaferes.png"
-                    rating="5.0"
-                    reviewCount="6"
-                    country="Pakistan"
-                    title="Life Lessons with Katie Zaferes"
-                    price="136"
-
-                />
+                {cardElement}
             </div>
         </div>
     )

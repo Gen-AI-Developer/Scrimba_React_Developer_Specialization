@@ -20,9 +20,16 @@ Notes:
 */
 
 export default function Card(promps) {
+    let badgetext = promps.openspots
+    if (promps.openspots === 0) {
+        badgetext = "SOLD OUT"
+    }
+    else if (promps.location === "Online")
+        badgetext = "ON LINE"
     return (
         <div className="">
             <div className="card">
+                {badgetext && <div className="card--bagde">{badgetext}</div>}
                 <img src={promps.img} className="card--img" />
                 <p className="card--title">{promps.title}</p>
                 <p className="card--para"><span className="bold">From ${promps.price}</span> / person</p>
@@ -30,7 +37,7 @@ export default function Card(promps) {
                     <img className="card--star" src="./images/star.png" />
                     <span>{promps.rating}</span>
                     <span className="gray">-({promps.reviewCount}) • </span>
-                    <span className="gray">{promps.country}</span>
+                    <span className="gray">{promps.location}</span>
                 </div>
                 <div className="card-btn-div">
                     <button className="card--btn">View More!</button>
