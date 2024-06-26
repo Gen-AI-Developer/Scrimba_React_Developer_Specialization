@@ -554,10 +554,10 @@ Notes:
 */
 
 function Card(promps) {
-    var badgetext = promps.openspots;
+    var badgetext = void 0;
     if (promps.openspots === 0) {
         badgetext = "SOLD OUT";
-    } else if (promps.location === "Online") badgetext = "ON LINE";
+    } else if (promps.location === "Online") badgetext = "ONLINE";
     return _react2.default.createElement(
         "div",
         { className: "" },

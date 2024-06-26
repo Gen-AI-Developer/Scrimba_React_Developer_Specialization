@@ -20,12 +20,12 @@ Notes:
 */
 
 export default function Card(promps) {
-    let badgetext = promps.openspots
+    let badgetext
     if (promps.openspots === 0) {
         badgetext = "SOLD OUT"
     }
     else if (promps.location === "Online")
-        badgetext = "ON LINE"
+        badgetext = "ONLINE"
     return (
         <div className="">
             <div className="card">
