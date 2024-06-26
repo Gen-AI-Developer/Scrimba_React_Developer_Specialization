@@ -23,11 +23,18 @@ show the punchline?
 import React from "react";
 import ReactDOM from "react-dom"
 import Joke from "./components/jokes";
-import jokeData from jokeData
+import jokeData from "./JokesData"
 
 export default function App() {
-  
+  const jokeElement = jokeData.map(joke => {
+    return <Joke
+      setup={joke.setup}
+      punchline={joke.punchline}
+    />
+  })
+  console.log(jokeData)
   return <div>
+    {jokeElement}
   </div>
   {/* <Joke
       setup="I got my daughter a fridge for her birthday."

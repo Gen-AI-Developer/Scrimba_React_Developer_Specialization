@@ -63,11 +63,99 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = App;
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(6);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _jokes = __webpack_require__(5);
+
+var _jokes2 = _interopRequireDefault(_jokes);
+
+var _JokesData = __webpack_require__(16);
+
+var _JokesData2 = _interopRequireDefault(_JokesData);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/* Challenge:
+One LAST time in this course, set up a React app from scratch
+- Render an <App /> component
+    - App should be in its own file
+- App should render 4-5 <Joke /> components 
+  (Joke component defined in its own file too)
+    - Each Joke should receive a "setup" prop and a "punchline" prop
+      and render those however you'd like
+- Use your favorite 2-part jokes (setup & punchline), or check
+  jokes.md file for some examples.
+
+
+
+EXTRA CREDIT:
+Some jokes are only a punchline with no setup:
+
+E.g.: "It’s hard to explain puns to kleptomaniacs because 
+they always take things literally."
+
+If you don't pass in a "question" prop, how might you make it only 
+show the punchline?
+*/
+function App() {
+  var jokeElement = _JokesData2.default.map(function (joke) {
+    return _react2.default.createElement(_jokes2.default, {
+      setup: joke.setup,
+      punchline: joke.punchline
+    });
+  });
+  console.log(_JokesData2.default);
+  return _react2.default.createElement(
+    "div",
+    null,
+    jokeElement
+  );
+  {/* <Joke
+       setup="I got my daughter a fridge for her birthday."
+       punchline="I can't wait to see her face light up when she opens it."
+     />
+     <Joke
+       setup="How did the hacker escape the police?"
+       punchline="He just ransomware!"
+     />
+     <Joke
+       setup="Why don't pirates travel on mountain roads?"
+       punchline="Scurvy."
+     />
+     <Joke
+       setup="Why do bees stay in the hive in the winter?"
+       punchline="Swarm."
+     />
+     <Joke
+       setup="What's the best thing about Switzerland?"
+       punchline="I don't know, but the flag is a big plus!"
+     /> */}
+}
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -257,7 +345,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -269,10 +357,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(9);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -369,7 +457,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -381,10 +469,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(13);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -395,7 +483,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Jokes;
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -430,7 +518,7 @@ function Jokes(props) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -473,93 +561,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(7);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = App;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(5);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _jokes = __webpack_require__(4);
-
-var _jokes2 = _interopRequireDefault(_jokes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function App() {
-  var colors = [_react2.default.createElement(
-    "h2",
-    null,
-    "Red"
-  ), _react2.default.createElement(
-    "h2",
-    null,
-    "Orange"
-  ), _react2.default.createElement(
-    "h2",
-    null,
-    "Yellow"
-  ), _react2.default.createElement(
-    "h2",
-    null,
-    "Green"
-  ), _react2.default.createElement(
-    "h2",
-    null,
-    "Blue"
-  ), _react2.default.createElement(
-    "h2",
-    null,
-    "Indigo"
-  ), _react2.default.createElement(
-    "h2",
-    null,
-    "Violet"
-  )];
-  return _react2.default.createElement(
-    "div",
-    null,
-    colors
-  );
-} /* Challenge:
-  One LAST time in this course, set up a React app from scratch
-  - Render an <App /> component
-      - App should be in its own file
-  - App should render 4-5 <Joke /> components 
-    (Joke component defined in its own file too)
-      - Each Joke should receive a "setup" prop and a "punchline" prop
-        and render those however you'd like
-  - Use your favorite 2-part jokes (setup & punchline), or check
-    jokes.md file for some examples.
-  
-  
-  
-  EXTRA CREDIT:
-  Some jokes are only a punchline with no setup:
-  
-  E.g.: "It’s hard to explain puns to kleptomaniacs because 
-  they always take things literally."
-  
-  If you don't pass in a "question" prop, how might you make it only 
-  show the punchline?
-  */
-
-_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 7 */
@@ -581,9 +583,9 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
-var _assign = __webpack_require__(2);
-var Scheduler = __webpack_require__(3);
+var React = __webpack_require__(2);
+var _assign = __webpack_require__(3);
+var Scheduler = __webpack_require__(4);
 var tracing = __webpack_require__(15);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -26829,7 +26831,7 @@ exports.version = ReactVersion;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 8 */
@@ -26847,7 +26849,7 @@ exports.version = ReactVersion;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),m=__webpack_require__(2),r=__webpack_require__(3);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+var aa=__webpack_require__(2),m=__webpack_require__(3),r=__webpack_require__(4);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -27155,7 +27157,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(2);
+var _assign = __webpack_require__(3);
 
 // TODO: this is special because it gets imported during build.
 var ReactVersion = '17.0.2';
@@ -29474,7 +29476,7 @@ exports.version = ReactVersion;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 10 */
@@ -29489,7 +29491,7 @@ exports.version = ReactVersion;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var l=__webpack_require__(2),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
+var l=__webpack_require__(3),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
 if("function"===typeof Symbol&&Symbol.for){var w=Symbol.for;n=w("react.element");p=w("react.portal");exports.Fragment=w("react.fragment");exports.StrictMode=w("react.strict_mode");exports.Profiler=w("react.profiler");q=w("react.provider");r=w("react.context");t=w("react.forward_ref");exports.Suspense=w("react.suspense");u=w("react.memo");v=w("react.lazy")}var x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){if(null===a||"object"!==typeof a)return null;a=x&&a[x]||a["@@iterator"];return"function"===typeof a?a:null}function z(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
 var A={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},B={};function C(a,b,c){this.props=a;this.context=b;this.refs=B;this.updater=c||A}C.prototype.isReactComponent={};C.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error(z(85));this.updater.enqueueSetState(this,a,b,"setState")};C.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
@@ -29859,7 +29861,7 @@ exports.unstable_wrap = unstable_wrap;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 12 */
@@ -30529,7 +30531,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 14 */
@@ -30571,7 +30573,34 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(11);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = [{
+    setup: "I got my daughter a fridge for her birthday.",
+    punchline: "I can't wait to see her face light up when she opens it."
+}, {
+    setup: "How did the hacker escape the police?",
+    punchline: "He just ransomware!"
+}, {
+    setup: "Why don't pirates travel on mountain roads?",
+    punchline: "Scurvy."
+}, {
+    setup: "Why do bees stay in the hive in the winter?",
+    punchline: "Swarm."
+}, {
+    setup: "What's the best thing about Switzerland?",
+    punchline: "I don't know, but the flag is a big plus!"
+}];
 
 /***/ })
 /******/ ]);
