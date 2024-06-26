@@ -23,22 +23,13 @@ show the punchline?
 import React from "react";
 import ReactDOM from "react-dom"
 import Joke from "./components/jokes";
+import jokeData from jokeData
 
 export default function App() {
-  const colors = [
-    <h2>Red</h2>,
-    <h2>Orange</h2>,
-    <h2>Yellow</h2>,
-    <h2>Green</h2>,
-    <h2>Blue</h2>,
-    <h2>Indigo</h2>,
-    <h2>Violet</h2>
-  ]
+  
   return <div>
-
-    {colors}
-
-    {/* <Joke
+  </div>
+  {/* <Joke
       setup="I got my daughter a fridge for her birthday."
       punchline="I can't wait to see her face light up when she opens it."
     />
@@ -58,6 +49,5 @@ export default function App() {
       setup="What's the best thing about Switzerland?"
       punchline="I don't know, but the flag is a big plus!"
     /> */}
-  </div>
 }
 ReactDOM.render(<App />, document.getElementById('root'))
