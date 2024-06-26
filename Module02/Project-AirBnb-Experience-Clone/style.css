@@ -169,6 +169,8 @@ section {
     margin-right: 20px;
     margin-left: 20px;
     overflow-x: visible;
+    justify-content: center;
+    align-items: center;
 }
 
 .card--bagde {
