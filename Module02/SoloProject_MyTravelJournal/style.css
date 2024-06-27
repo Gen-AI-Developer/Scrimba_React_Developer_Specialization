@@ -7,19 +7,12 @@ body {
 
 }
 
-.viewport {
-
-    /* background-color: #2B283A; */
-}
-
-.divdiv {
+/* .divdiv {
     display: flex;
     flex-direction: column;
-    width: 650px;
-    align-items: center;
-    justify-content: center;
+    width: 788px;
     background-color: #ffffff;
-}
+} */
 
 /* Nav Bar Setting CSS */
 
@@ -64,8 +57,8 @@ nav {
     padding: 10px;
     margin-left: 20%;
     margin-right: 20%;
-    /* box-shadow: 0px 4.98256px 8.4564px rgba(190, 190, 190, 0.548);
-    border-radius: 5px; */
+    box-shadow: 0px 4.98256px 8.4564px rgba(190, 190, 190, 0.548);
+    border-radius: 5px;
 }
 
 .card-img {
@@ -89,6 +82,8 @@ nav {
 
 .card-icon {
     padding: 5px;
+    height: 22px;
+    width: 18px;
 }
 
 a {
