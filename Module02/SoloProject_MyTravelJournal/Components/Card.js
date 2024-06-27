@@ -1,8 +1,8 @@
 import React from "react";
-export default function Card(items) {
+export default function Card(key, items) {
     return (
         <div className="card">
-            <h1>Sfaar Ali Shah</h1>
+            <h1>{dataitem.title}</h1>
         </div>
     )
 }

@@ -45,7 +45,9 @@ nav {
 
 /* Card Design CSS */
 .card {
+
     margin: 10px;
     padding: 10px;
     background-color: aqua;
+    color: black;
 }
