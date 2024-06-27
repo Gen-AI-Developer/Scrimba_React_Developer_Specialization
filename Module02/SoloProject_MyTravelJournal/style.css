@@ -2,3 +2,42 @@
     box-sizing: border-box;
 }
 
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.nav-main-div {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(255, 89, 89);
+    height: 71px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.nav-text {
+    font-size: large;
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+}
