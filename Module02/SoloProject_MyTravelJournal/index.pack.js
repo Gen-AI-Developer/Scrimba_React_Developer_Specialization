@@ -415,12 +415,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Home() {
     var CardElement = _data2.default.map(function (data) {
-        return _react2.default.createElement(_Card2.default, null);
+        return _react2.default.createElement(_Card2.default, {
+            key: data.id,
+            title: data.title,
+            description: data.description,
+            googlemapurl: data.googleMapsUrl,
+            img: data.imageUrl,
+            startDate: data.startDate,
+            endDate: data.endDate,
+            location: data.location
+        });
     });
+
+    // console.log(CardElement)
     return _react2.default.createElement(
         "div",
         null,
-        _react2.default.createElement(_NavBar2.default, null)
+        _react2.default.createElement(_NavBar2.default, null),
+        _react2.default.createElement(
+            "div",
+            { className: "divdiv" },
+            CardElement
+        )
     );
 }
 
@@ -488,16 +504,44 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Card(key, items) {
+function Card(props) {
     return _react2.default.createElement(
         "div",
         { className: "card" },
         _react2.default.createElement(
-            "h1",
+            "div",
             null,
-            dataitem.title
+            " ",
+            _react2.default.createElement("img", { className: "card-img", src: props.img })
+        ),
+        _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+                "div",
+                { className: "card-locmap" },
+                _react2.default.createElement("img", { src: "./images/locationicon.png" }),
+                " ",
+                _react2.default.createElement(
+                    "span",
+                    { className: "card-location" },
+                    props.location
+                )
+            ),
+            _react2.default.createElement(
+                "h1",
+                { className: "card-title" },
+                props.title
+            )
         )
-    );
+    )
+    // <h1>{props.title}</h1>
+    // <h1>{props.location}</h1>
+    // <h1>{props.description}</h1>
+    // <h1>{props.googlemapurl}</h1>
+    // <h1>{props.startDate}</h1>
+    // <h1>{props.endDate}</h1>
+    ;
 }
 
 /***/ }),

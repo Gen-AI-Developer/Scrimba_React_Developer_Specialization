@@ -8,6 +8,11 @@
     font-style: normal;
 }
 
+body {
+    font-family: "Didact Gothic", sans-serif;
+
+}
+
 /* Nav Bar Setting CSS */
 
 .nav-main-div {
@@ -22,7 +27,7 @@ nav {
     flex-direction: row;
     top: 0;
     left: 0;
-    position: fixed;
+    position: relative;
     background-color: rgb(255, 89, 89);
     height: 71px;
     width: 100%;
@@ -40,14 +45,34 @@ nav {
 .nav-text {
     font-size: large;
     color: white;
-    font-family: "Didact Gothic", sans-serif;
 }
 
 /* Card Design CSS */
 .card {
-
+    display: flex;
+    flex-direction: row;
     margin: 10px;
     padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 0px 4.98256px 8.4564px rgba(255, 118, 118, 0.548);
+}
+
+.card-img {
+    width: 125px;
+    height: 185px;
+}
+
+.card-location {
+    text-justify: newspaper;
+    font-size: medium;
+    letter-spacing: 4px;
+
+}
+
+.card-locmap {
     background-color: aqua;
-    color: black;
+    justify-items: center;
+    align-items: center;
+
 }
