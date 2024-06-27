@@ -430,7 +430,7 @@ function Home() {
     // console.log(CardElement)
     return _react2.default.createElement(
         "div",
-        null,
+        { className: "viewport" },
         _react2.default.createElement(_NavBar2.default, null),
         _react2.default.createElement(
             "div",
@@ -516,22 +516,50 @@ function Card(props) {
         ),
         _react2.default.createElement(
             "div",
-            null,
+            { className: "card-content" },
             _react2.default.createElement(
                 "div",
                 { className: "card-locmap" },
-                _react2.default.createElement("img", { src: "./images/locationicon.png" }),
-                " ",
+                _react2.default.createElement("img", { className: "card-icon", src: "./images/locationicon.png" }),
                 _react2.default.createElement(
                     "span",
                     { className: "card-location" },
                     props.location
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "card-googlemapurl" },
+                    _react2.default.createElement(
+                        "a",
+                        { href: props.googlemapurl },
+                        " View on Google Maps"
+                    )
                 )
             ),
             _react2.default.createElement(
-                "h1",
+                "div",
                 { className: "card-title" },
-                props.title
+                _react2.default.createElement(
+                    "h1",
+                    { className: "card-title" },
+                    props.title
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "card-dates" },
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    props.startDate,
+                    " to ",
+                    props.endDate
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "card-description" },
+                props.description
             )
         )
     )
@@ -576,7 +604,7 @@ function NavBar() {
                 _react2.default.createElement(
                     "p",
                     { className: "nav-text" },
-                    "my travel Journal."
+                    "My Travel Journal."
                 )
             )
         )
@@ -610,7 +638,7 @@ exports.default = [{
     startDate: "27 May, 2021 ",
     endDate: "8 Jun, 2021",
     description: "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings.",
-    imageUrl: "https://source.unsplash.com/JmuyB_LibRo"
+    imageUrl: "https://news.imz.at/imzfiles/737485-socialmediapreview-inside-the-sydney-opera-house-leads-abc-slate-9187868.jpg"
 }, {
     id: 3,
     title: "Geirangerfjord",
@@ -619,7 +647,7 @@ exports.default = [{
     startDate: "01 Oct, 2021",
     endDate: "18 Nov, 2021",
     description: "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
-    imageUrl: "https://source.unsplash.com/3PeSjpLVtLg"
+    imageUrl: "https://cdn.sanity.io/images/4aans0in/production/21473a1b4f37cf766e24633ab471120c8f862ebf-2000x1500.jpg?w=3840&h=2880&fm=webp&q=100&fit=max&auto=format"
 }];
 
 /***/ }),

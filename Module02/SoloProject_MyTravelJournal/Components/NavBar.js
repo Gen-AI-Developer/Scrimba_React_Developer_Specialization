@@ -5,7 +5,7 @@ export default function NavBar() {
         <nav>
             <div className="nav-main-div">
                 <img className="nav-logo" src="./images/Globe.png" />
-                <p className="nav-text">my travel Journal.</p>
+                <p className="nav-text">My Travel Journal.</p>
             </div>
         </nav>
     </header>

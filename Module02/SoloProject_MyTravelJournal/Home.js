@@ -19,7 +19,7 @@ export default function Home() {
     })
 
     // console.log(CardElement)
-    return <div>
+    return <div className="viewport">
         <NavBar />
         <div className="divdiv">
             {CardElement}

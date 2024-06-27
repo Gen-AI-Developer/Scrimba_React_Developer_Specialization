@@ -2,15 +2,23 @@
     box-sizing: border-box;
 }
 
-.didact-gothic-regular {
-    font-family: "Didact Gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+    font-family: "Inter", sans-serif;
+
 }
 
-body {
-    font-family: "Didact Gothic", sans-serif;
+.viewport {
 
+    /* background-color: #2B283A; */
+}
+
+.divdiv {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: center;
+    justify-content: center;
+    background-color: #727272;
 }
 
 /* Nav Bar Setting CSS */
@@ -49,13 +57,15 @@ nav {
 
 /* Card Design CSS */
 .card {
+    color: #2B283A;
     display: flex;
     flex-direction: row;
     margin: 10px;
     padding: 10px;
     margin-left: 20%;
     margin-right: 20%;
-    box-shadow: 0px 4.98256px 8.4564px rgba(255, 118, 118, 0.548);
+    /* box-shadow: 0px 4.98256px 8.4564px rgba(190, 190, 190, 0.548);
+    border-radius: 5px; */
 }
 
 .card-img {
@@ -63,18 +73,61 @@ nav {
     height: 185px;
     object-fit: cover;
     border-radius: 5px;
+    margin-right: 5px;
 }
 
 .card-location {
-    text-justify: newspaper;
-    font-size: medium;
-    letter-spacing: 4px;
+    font-size: 10.24px;
+    letter-spacing: 2px;
+    padding-right: 10px;
+}
 
+.card-description {
+    font-size: 10.24px;
+    justify-content: start;
+}
+
+.card-icon {
+    padding: 5px;
+}
+
+a {
+    color: rgb(170, 170, 170);
+}
+
+.card-googlemapurl {
+    justify-content: end;
+    font-size: 10.24px;
 }
 
 .card-locmap {
-    background-color: aqua;
     justify-items: center;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title {
+    font-size: 25px;
+    margin: 0%;
+    left: 0%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 19px;
+    justify-content: center;
+}
+
+.card-dates {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 10.24px;
+    margin-bottom: 8px;
 
 }
