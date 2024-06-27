@@ -30603,7 +30603,15 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Card(items) {
-    return _react2.default.createElement("div", null);
+    return _react2.default.createElement(
+        "div",
+        { className: "card" },
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Sfaar Ali Shah"
+        )
+    );
 }
 
 /***/ })

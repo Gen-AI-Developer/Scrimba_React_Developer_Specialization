@@ -8,6 +8,7 @@
     font-style: normal;
 }
 
+/* Nav Bar Setting CSS */
 
 .nav-main-div {
     flex-direction: row;
@@ -40,4 +41,11 @@ nav {
     font-size: large;
     color: white;
     font-family: "Didact Gothic", sans-serif;
+}
+
+/* Card Design CSS */
+.card {
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
 }
