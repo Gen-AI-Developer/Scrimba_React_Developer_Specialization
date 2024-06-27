@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./Components/NavBar";
 import data from "./data";
 import Card from "./Components/Card"
+import Footer from "./Components/Footer"
 
 
 export default function Home() {
@@ -24,5 +25,6 @@ export default function Home() {
         <div className="divdiv">
             {CardElement}
         </div>
+        <Footer />
     </div>
 }

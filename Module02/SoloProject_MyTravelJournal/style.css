@@ -96,9 +96,8 @@ nav {
         transform: scale(1.1, 1.1);
     }
 
-    /* 100% {
-        transform: scale(1, 1);
-    } */
+    /* 
+     */
 
 }
 
@@ -190,3 +189,9 @@ a {
         margin-right: 35%; */
 /* }
 } */
+
+.footer-main-div {
+    display: flex;
+    flex-direction: row;
+    background-color: #2B283A;
+}
