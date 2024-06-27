@@ -2,9 +2,9 @@
 
 
 ## Developed Mini/Major Project Links
--  Static App [My-Travel-Journal](https://667da8e33dc0c8430c59b86c--mtjp.netlify.app/)
-- Static App [Airbnb Experience App]()
-- Dynamic App[Meme Generator App]()
+-  Module 02 - Static App [My-Travel-Journal](https://667da8e33dc0c8430c59b86c--mtjp.netlify.app/)
+- Module 02 - Static App [Airbnb Experience App]()
+- Module 03 - Dynamic App[Meme Generator App]()
 - []()
 - []()
 
