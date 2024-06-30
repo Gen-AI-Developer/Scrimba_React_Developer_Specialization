@@ -5,6 +5,7 @@ export default function NavBar() {
         <nav>
             <div>
                 <img className="nav-logo" src="./images/troll-face.png"></img>
+                <span></span>
             </div>
         </nav>
     </header>
