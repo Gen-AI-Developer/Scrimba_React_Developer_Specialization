@@ -21,6 +21,19 @@ body {
     font-family: 'Karla';
 }
 
+.nav-project-text {
+    color: white;
+    margin-right: 20px;
+
+}
+
+.div-logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -31,4 +44,5 @@ body {
     position: relative;
     color: white;
     align-items: center;
+    justify-content: space-between;
 }

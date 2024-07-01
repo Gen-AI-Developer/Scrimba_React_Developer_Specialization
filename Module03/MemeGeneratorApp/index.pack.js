@@ -403,6 +403,10 @@ var _NavBar = __webpack_require__(6);
 
 var _NavBar2 = _interopRequireDefault(_NavBar);
 
+var _Meme = __webpack_require__(17);
+
+var _Meme2 = _interopRequireDefault(_Meme);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
@@ -410,9 +414,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  */
 function App() {
     return _react2.default.createElement(
-        "main",
+        "div",
         null,
-        _react2.default.createElement(_NavBar2.default, null)
+        _react2.default.createElement(_NavBar2.default, null),
+        _react2.default.createElement(_Meme2.default, null)
     );
 }
 
@@ -490,11 +495,20 @@ function NavBar() {
             _react2.default.createElement(
                 "div",
                 { className: "nav" },
-                _react2.default.createElement("img", { className: "nav-logo", src: "./images/troll-face.png" }),
                 _react2.default.createElement(
-                    "h2",
-                    { className: "logo-text" },
-                    "Meme Generator"
+                    "div",
+                    { className: "div-logo-name" },
+                    _react2.default.createElement("img", { className: "nav-logo", src: "./images/troll-face.png" }),
+                    _react2.default.createElement(
+                        "h2",
+                        { className: "logo-text" },
+                        "Meme Generator"
+                    )
+                ),
+                _react2.default.createElement(
+                    "h3",
+                    { className: "nav-project-text" },
+                    "React Course - Project 3"
                 )
             )
         )
@@ -30535,6 +30549,42 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Meme;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Meme() {
+    return _react2.default.createElement(
+        "main",
+        null,
+        _react2.default.createElement(
+            Form,
+            null,
+            _react2.default.createElement("input", { type: "text" }),
+            _react2.default.createElement("input", { type: "text" }),
+            _react2.default.createElement(
+                "button",
+                null,
+                "Get Some More Meme"
+            )
+        )
+    );
+}
 
 /***/ })
 /******/ ]);
