@@ -493,7 +493,7 @@ function NavBar() {
                 _react2.default.createElement("img", { className: "nav-logo", src: "./images/troll-face.png" }),
                 _react2.default.createElement(
                     "h2",
-                    null,
+                    { className: "logo-text" },
                     "Meme Generator"
                 )
             )
