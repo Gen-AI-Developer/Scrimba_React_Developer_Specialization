@@ -413,11 +413,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * Challenge: Build the Header component
  */
 function App() {
+    function handelClick() {
+        console.log("I was Click");
+    }
     return _react2.default.createElement(
         "div",
-        null,
-        _react2.default.createElement(_NavBar2.default, null),
-        _react2.default.createElement(_Meme2.default, null)
+        { className: "testdiv" },
+        _react2.default.createElement("img", { onMouseOver: function onMouseOver(e) {
+                return console.log("Mouse Over Image");
+            }, className: "testimg", src: "https://picsum.photos/640/360" }),
+        _react2.default.createElement(
+            "button",
+            { onClick: handelClick },
+            "Click me"
+        )
     );
 }
 

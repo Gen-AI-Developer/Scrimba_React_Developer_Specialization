@@ -78,8 +78,25 @@ button {
     grid-column: 1/-1;
     border: currentColor;
     color: white;
+    padding: 10px;
     font-weight: 500;
     background-color: rgb(103, 34, 128);
     background: linear-gradient(90deg, rgba(103, 34, 128, 1) 0%, rgba(166, 38, 211, 1) 100%);
 
+}
+
+/* Testing API and Event Listening */
+.testimg {
+    border-radius: 10px;
+    margin-bottom: 11px;
+}
+
+.testdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
 }
