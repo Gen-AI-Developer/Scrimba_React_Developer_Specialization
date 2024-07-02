@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 77px;
+    width: 100%;
     background: rgb(103, 34, 128);
     background: linear-gradient(90deg, rgba(103, 34, 128, 1) 0%, rgba(166, 38, 211, 1) 100%);
     top: 0;
@@ -55,7 +56,7 @@ body {
     flex-direction: column; */
 }
 
-form {
+.form {
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
@@ -86,7 +87,7 @@ button {
 }
 
 /* Testing API and Event Listening */
-.testimg {
+/* .testimg {
     border-radius: 10px;
     margin-bottom: 11px;
 }
@@ -99,4 +100,11 @@ button {
     justify-content: center;
     justify-items: center;
     padding: 10px;
+} */
+
+/*  Meme Image Css */
+.meme-image {
+    width: fit-content;
+    height: min-content;
+
 }
