@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import data from '../../Module02/SoloProject_MyTravelJournal/data';
 /**
     * Challenge: Map over the thingsArray to generate
     * a <p> element for each item and render them on the page
@@ -13,11 +12,8 @@ function ParaElement([]) {
 
 function App() {
     const thingsArray = ["Thing 1", "Thing 2"]
-    let paraelement = thingsArray.map((index) => {
-        return <p className='paragraph'>
-            
-        </p>
-    })
+    let paraelement;
+
 
 
     return (
@@ -25,6 +21,13 @@ function App() {
             <button onClick={e => {
                 const thingsArrayLength = thingsArray.length
                 thingsArray.push("Things ".concat(thingsArrayLength + 1))
+                paraelement = thingsArray.map((thing) => {
+                    return <p
+                        key={thing}
+                        className='paragraph'>
+                        {thing}
+                    </p>
+                })
                 // console.log(thingsArray)
 
             }}>Add Item</button>

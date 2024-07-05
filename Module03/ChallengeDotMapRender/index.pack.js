@@ -444,10 +444,6 @@ var _reactDom = __webpack_require__(4);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _data = __webpack_require__(15);
-
-var _data2 = _interopRequireDefault(_data);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr); }
@@ -466,9 +462,7 @@ function ParaElement(_ref) {
 
 function App() {
     var thingsArray = ["Thing 1", "Thing 2"];
-    var paraelement = thingsArray.map(function (index) {
-        return _react2.default.createElement('p', { className: 'paragraph' });
-    });
+    var paraelement = void 0;
 
     return _react2.default.createElement(
         'div',
@@ -478,6 +472,15 @@ function App() {
             { onClick: function onClick(e) {
                     var thingsArrayLength = thingsArray.length;
                     thingsArray.push("Things ".concat(thingsArrayLength + 1));
+                    paraelement = thingsArray.map(function (thing) {
+                        return _react2.default.createElement(
+                            'p',
+                            {
+                                key: thing,
+                                className: 'paragraph' },
+                            thing
+                        );
+                    });
                     // console.log(thingsArray)
                 } },
             'Add Item'
@@ -30503,45 +30506,6 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = [{
-    id: 1,
-    title: "Mount Fuji",
-    location: "Japan",
-    googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
-    startDate: "12 Jan, 2021",
-    endDate: "24 Jan, 2021",
-    description: "Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.",
-    imageUrl: "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002532/img/basic/a0002532_main.jpg"
-}, {
-    id: 2,
-    title: "Sydney Opera House",
-    location: "AUSTRALIA",
-    googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
-    startDate: "27 May, 2021 ",
-    endDate: "8 Jun, 2021",
-    description: "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings.",
-    imageUrl: "https://news.imz.at/imzfiles/737485-socialmediapreview-inside-the-sydney-opera-house-leads-abc-slate-9187868.jpg"
-}, {
-    id: 3,
-    title: "Geirangerfjord",
-    location: "NORWAY",
-    googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
-    startDate: "01 Oct, 2021",
-    endDate: "18 Nov, 2021",
-    description: "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
-    imageUrl: "https://cdn.sanity.io/images/4aans0in/production/21473a1b4f37cf766e24633ab471120c8f862ebf-2000x1500.jpg?w=3840&h=2880&fm=webp&q=100&fit=max&auto=format"
-}];
 
 /***/ })
 /******/ ]);
