@@ -409,7 +409,7 @@ function App() {
     /**
      * Challenge: Set up state to track our count (initial value is 0)
      */
-    var _React$useState = _react2.default.useState(342),
+    var _React$useState = _react2.default.useState(3),
         _React$useState2 = _slicedToArray(_React$useState, 2),
         count = _React$useState2[0],
         setCount = _React$useState2[1];

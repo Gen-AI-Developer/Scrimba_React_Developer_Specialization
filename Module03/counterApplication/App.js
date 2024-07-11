@@ -5,7 +5,7 @@ export default function App() {
     /**
      * Challenge: Set up state to track our count (initial value is 0)
      */
-    let [count, setCount] = React.useState(342)
+    let [count, setCount] = React.useState(3)
     function add() {
         setCount(preCount => preCount + 1)
     }

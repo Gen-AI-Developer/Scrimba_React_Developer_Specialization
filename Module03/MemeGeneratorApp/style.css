@@ -104,7 +104,8 @@ button {
 
 /*  Meme Image Css */
 .meme-image {
-    width: fit-content;
+    width: 90%;
     height: min-content;
-
+    border: solid;
+    border-color: black;
 }
