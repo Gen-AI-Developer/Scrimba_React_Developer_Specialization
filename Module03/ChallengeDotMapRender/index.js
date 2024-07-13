@@ -1,39 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-/**
-    * Challenge: Map over the thingsArray to generate
-    * a <p> element for each item and render them on the page
-    * below the button
-    */
-
-function ParaElement([]) {
-    return
-}
 
 function App() {
-    const thingsArray = ["Thing 1", "Thing 2"]
-    let paraelement;
+    let thingsElements
+    const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
+
+
+    function addItem() {
+        setThingsArray((prevArray) => {
+            return new prevArray.push('Thing '.concat(thingsArray.length))
+
+        })
+    }
 
 
 
     return (
         <div>
-            <button onClick={e => {
-                const thingsArrayLength = thingsArray.length
-                thingsArray.push("Things ".concat(thingsArrayLength + 1))
-                paraelement = thingsArray.map((thing) => {
-                    return <p
-                        key={thing}
-                        className='paragraph'>
-                        {thing}
-                    </p>
-                })
-                // console.log(thingsArray)
-
-            }}>Add Item</button>
-            <div>
-                {paraelement}
-            </div>
+            <button onClick={addItem}>Add Item</button>
+            {thingsArray.map(thing => <p key={thing}>{thing}</p>)}
         </div>
     )
 }

@@ -436,6 +436,8 @@ if (process.env.NODE_ENV === 'production') {
 "use strict";
 
 
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
 var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
@@ -446,50 +448,35 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr); }
-
-/**
-    * Challenge: Map over the thingsArray to generate
-    * a <p> element for each item and render them on the page
-    * below the button
-    */
-
-function ParaElement(_ref) {
-    var _ref2 = _toArray(_ref);
-
-    return;
-}
-
 function App() {
-    var thingsArray = ["Thing 1", "Thing 2"];
-    var paraelement = void 0;
+    var thingsElements = void 0;
+
+    var _React$useState = _react2.default.useState(["Thing 1", "Thing 2"]),
+        _React$useState2 = _slicedToArray(_React$useState, 2),
+        thingsArray = _React$useState2[0],
+        setThingsArray = _React$useState2[1];
+
+    function addItem() {
+        setThingsArray(function (prevArray) {
+            return new prevArray.push('Thing '.concat(thingsArray.length));
+        });
+    }
 
     return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
             'button',
-            { onClick: function onClick(e) {
-                    var thingsArrayLength = thingsArray.length;
-                    thingsArray.push("Things ".concat(thingsArrayLength + 1));
-                    paraelement = thingsArray.map(function (thing) {
-                        return _react2.default.createElement(
-                            'p',
-                            {
-                                key: thing,
-                                className: 'paragraph' },
-                            thing
-                        );
-                    });
-                    // console.log(thingsArray)
-                } },
+            { onClick: addItem },
             'Add Item'
         ),
-        _react2.default.createElement(
-            'div',
-            null,
-            paraelement
-        )
+        thingsArray.map(function (thing) {
+            return _react2.default.createElement(
+                'p',
+                { key: thing },
+                thing
+            );
+        })
     );
 }
 
