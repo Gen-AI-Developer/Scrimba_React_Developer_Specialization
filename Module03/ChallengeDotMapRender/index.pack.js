@@ -449,8 +449,6 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    var thingsElements = void 0;
-
     var _React$useState = _react2.default.useState(["Thing 1", "Thing 2"]),
         _React$useState2 = _slicedToArray(_React$useState, 2),
         thingsArray = _React$useState2[0],
@@ -461,7 +459,6 @@ function App() {
             return new prevArray.push('Thing '.concat(thingsArray.length));
         });
     }
-
     return _react2.default.createElement(
         'div',
         null,
