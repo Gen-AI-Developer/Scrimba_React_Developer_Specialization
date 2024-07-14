@@ -3,12 +3,9 @@ import ReactDOM from 'react-dom';
 
 function App() {
     const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
-    
-    function addItem() {
-        setThingsArray((prevArray) => {
-            return new prevArray.push('Thing '.concat(thingsArray.length))
 
-        })
+    function addItem() {
+        setThingsArray((prevArray) => [...prevArray, `Thing ${prevArray.length + 1}`])
     }
     return (
         <div>
