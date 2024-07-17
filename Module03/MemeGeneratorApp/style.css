@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+main {
+    padding: 4%;
+}
+
 .nav-logo {
     width: 31.31px;
     height: 26.22px;
@@ -37,7 +41,7 @@ body {
 .nav {
     display: flex;
     flex-direction: row;
-    height: 77px;
+    height: 65px;
     width: 100%;
     background: rgb(103, 34, 128);
     background: linear-gradient(90deg, rgba(103, 34, 128, 1) 0%, rgba(166, 38, 211, 1) 100%);
@@ -49,17 +53,13 @@ body {
 }
 
 /* FORM EDITING HERE */
-.form-main {
-    /* background-color: aqua; */
-    /* align-items: center;
-    display: flex;
-    flex-direction: column; */
-}
+
 
 .form {
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
+    margin-bottom: 17px;
 }
 
 .form-input {
@@ -69,21 +69,16 @@ body {
     text-indent: 5px;
 }
 
-
-main {
-    padding: 36px;
-}
-
-button {
+.form-button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
     border-radius: 5px;
-    grid-column: 1/-1;
-    border: currentColor;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
     color: white;
-    padding: 10px;
+    border: none;
+    cursor: pointer;
     font-weight: 500;
-    background-color: rgb(103, 34, 128);
-    background: linear-gradient(90deg, rgba(103, 34, 128, 1) 0%, rgba(166, 38, 211, 1) 100%);
-
+    padding: 5px;
 }
 
 /* Testing API and Event Listening */
@@ -104,8 +99,8 @@ button {
 
 /*  Meme Image Css */
 .meme-image {
-    width: 90%;
-    height: min-content;
-    border: solid;
-    border-color: black;
+    width: 100%;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: rgb(136, 136, 136);
 }

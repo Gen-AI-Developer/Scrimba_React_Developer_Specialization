@@ -492,8 +492,25 @@ var _MemeData2 = _interopRequireDefault(_MemeData);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/**
+     * Challenge: Update our state to save the meme-related
+     * data as an object called `meme`. It should have the
+     * following 3 properties:
+     * topText, bottomText, randomImage.
+     * 
+     * The 2 text states can default to empty strings for now,
+     * amd randomImage should default to "http://i.imgflip.com/1bij.jpg"
+     * 
+     * Next, create a new state variable called `allMemeImages`
+     * which will default to `memesData`, which we imported above
+     * 
+     * Lastly, update the `getMemeImage` function and the markup 
+     * to reflect our newly reformed state object and array in the
+     * correct way.
+     */
+
 function Meme() {
-    var url = '';
+    var url = 'http://i.imgflip.com/1bij.jpg';
 
     var _React$useState = _react2.default.useState(url),
         _React$useState2 = _slicedToArray(_React$useState, 2),
@@ -523,7 +540,7 @@ function Meme() {
             _react2.default.createElement("img", { className: "meme-image", src: memeImage }),
             _react2.default.createElement(
                 "button",
-                { onClick: LoadImage },
+                { className: "form-button", onClick: LoadImage },
                 "Get a new Meme Image \uD83D\uDDBC"
             )
         )
